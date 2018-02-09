@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/toolbar"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:minHeight="?android:attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:weightSum="1">
+
+
+        <Button
+            android:onClick="onClickInputLanguage"
+            android:text="Русский"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnInputLanguage"
+            android:layout_weight="0.48"
+            android:stateListAnimator="@null"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="53dp"
+            android:layout_height="22dp"
+            app:srcCompat="@drawable/arrow_right"/>
+
+        <Button
+            android:onClick="onClickOutputLanguage"
+            android:text="Английский"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnOutputLanguage"
+            android:layout_weight="0.45"
+            android:stateListAnimator="@null"
+            android:textSize="14sp" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
